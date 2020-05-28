@@ -100,7 +100,7 @@ public class SplashScreen extends CordovaPlugin {
         cordova.getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                getView().setVisibility(View.INVISIBLE);
+                // getView().setVisibility(View.INVISIBLE);
             }
         });
         int drawableId = getSplashId();
@@ -193,7 +193,7 @@ public class SplashScreen extends CordovaPlugin {
             }
         } else if ("spinner".equals(id)) {
             if ("stop".equals(data.toString())) {
-                getView().setVisibility(View.VISIBLE);
+                // getView().setVisibility(View.VISIBLE);
             }
         } else if ("onReceivedError".equals(id)) {
             this.spinnerStop();
